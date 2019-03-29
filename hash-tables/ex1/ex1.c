@@ -22,7 +22,7 @@ Answer *get_indices_of_item_weights(int *weights, int length, int limit)
     //otherwise, add it to the table
     hash_table_insert(ht, weights[i],i);
   }
-
+  destroy_hash_table(ht);
   return NULL;
 }
 
